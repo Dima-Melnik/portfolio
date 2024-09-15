@@ -148,3 +148,48 @@ button{
 .heading-img img{
     margin-top: 59px;
 }
+
+/* main_content */
+
+/* main_content-icon */
+
+.main_content-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 42px 44px;
+    gap: 68px 20px;
+    margin: 30px 0;
+}
+
+.content-icon {
+    max-width: 150px;
+    height: auto;
+}
+
+/* main_content-skills */
+
+.skills-block{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.skills-block h2{
+    font-size: 27px;
+    font-weight: 600;
+    color: #2D2D2D;
+    line-height: 42px;
+    margin: 20px 0 12px 0;
+}
+
+.skills-block p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #2D2D2D;
+    line-height: 27px;
+    width: 302px;
+    margin: 0 auto;
+}
