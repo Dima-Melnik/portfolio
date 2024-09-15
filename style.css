@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Epilogue", sans-serif;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.container{
+    width: 100%;
+    padding: 0 24px;
+}
+
+/*  header */
+
+.logo span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+.menu-burger{
+    height: 20px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar{
+    height: 4px;
+    width: 100%;
+    background-color: #000;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-burger.active .bar:nth-child(2) {
+    opacity: 0
+  }
+  
+.menu-burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+.menu-burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 16px;
+}
+
+.menu-list{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: -100%;
+    transition: all .7s ease;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-top: 15px;
+}
+
+.menu-item{
+    padding: 15px 0;
+}
+
+.menu-item a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.active{
+    left: 0;
+}
+
+/* heading-content */
+
+.heading-content{
+    margin-top: 30px;
+}
+
+.heading-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.branding-title{
+    font-size: 20px;
+    color: #2D2D2D;
+    font-weight: 600;
+}
+
+.heading-title{
+    font-size: 68px;
+    font-weight: 600;
+    color: #2D2D2D;
+    margin-top: 24px;
+}
+
+.heading-text{
+    font-size: 17px;
+    font-weight: 400;
+    color: #2D2D2D;
+    line-height: 27px;
+    margin-top: 24px;
+    margin-bottom: 77px;
+}
+
+.heading-link{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    height: 30px;
+    padding: 29px 64px;
+    background-color: #2D2D2D;
+}
+
+.heading-img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.heading-img img{
+    margin-top: 59px;
+}
