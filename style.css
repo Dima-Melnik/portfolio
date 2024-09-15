@@ -8,7 +8,7 @@
 
 body{
     font-family: "Epilogue", sans-serif;
-    color: #000;
+    color: #2D2D2D;
 }
 
 a{
@@ -35,7 +35,6 @@ button{
 .logo span{
     font-size: 20px;
     font-weight: 600;
-    color: #2D2D2D;
 }
 
 .menu-burger{
@@ -110,21 +109,18 @@ button{
 
 .branding-title{
     font-size: 20px;
-    color: #2D2D2D;
     font-weight: 600;
 }
 
 .heading-title{
     font-size: 68px;
     font-weight: 600;
-    color: #2D2D2D;
     margin-top: 24px;
 }
 
 .heading-text{
     font-size: 17px;
     font-weight: 400;
-    color: #2D2D2D;
     line-height: 27px;
     margin-top: 24px;
     margin-bottom: 77px;
@@ -180,7 +176,6 @@ button{
 .skills-block h2{
     font-size: 27px;
     font-weight: 600;
-    color: #2D2D2D;
     line-height: 42px;
     margin: 20px 0 12px 0;
 }
@@ -188,8 +183,151 @@ button{
 .skills-block p{
     font-size: 17px;
     font-weight: 400;
-    color: #2D2D2D;
     line-height: 27px;
     width: 302px;
     margin: 0 auto;
+}
+
+/* main_content-work */
+
+.main_content-work{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.work-block img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.work-title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.work-block h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.work-block p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/* main_content-testimonial */
+
+.main_content-testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial-block{
+    padding: 42px;
+    background: #F3F3F3;
+}
+
+.testimonial-title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 42px;
+}
+
+.testimonial-text{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 68px;
+}
+
+.testimonial-profile{
+    display: flex;
+    column-gap: 16px;
+}
+
+.testimonial-profile h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 11px;
+}
+
+.testimonial-profile span{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.client-logo{
+    height: 50px;
+    width: 50px;
+}
+
+/* footer-content */
+.footer-content{
+    padding: 20px 0 40px 0;
+}
+
+.footer-content h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 24px;
+}
+
+.footer-text p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 42px;
+}
+
+.footer-icon{
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+    margin-bottom: 42px;
+}
+
+.footer-inputs input:nth-child(2){
+    display: block;
+    margin: 12px 0 24px 0;
+}
+
+.footer-inputs input{
+    border: none;
+    background: #F3F3F3;
+    height: 59px;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.footer-inputs input::placeholder{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.footer-inputs button{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 30px;
+    padding: 24px 64px;
+    background: #2D2D2D;
 }
