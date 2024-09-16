@@ -516,7 +516,7 @@ button{
     }
 }
 
-@media (min-width: 724px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
 
     .work-container{
         display: grid;
