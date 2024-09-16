@@ -435,3 +435,67 @@ button{
         padding: 42px 0 86px 0;
     }
 }
+
+@media (min-width: 768px) {
+    .work-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .testimonial-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .main_content-skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main_content-skills div:nth-child(3){
+        grid-column: span 2;
+    }
+
+    .main_content-icon{
+        justify-content: space-between;
+    }
+
+    .heading-img img{
+        margin-right: 100px;
+        margin-top: 0;
+    }
+
+    .heading-img{
+        justify-content: end;
+    }
+
+    .heading-box{
+        display: block;
+    }
+
+    .header-menu{
+        padding: 20px 28px;
+    }
+
+    .heading-content{
+        padding: 0 22px;
+    }
+
+    .work-title{
+        padding: 42px 0 0 0;
+    }
+
+    .testimonial-title{
+        padding: 42px 0 0 0;
+    }
+
+    .footer-content{
+        padding: 42px 0 60px 0;
+    }
+
+    .footer-inputs{
+        max-width: 500px;
+    }
+}
