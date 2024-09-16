@@ -347,21 +347,6 @@ button{
 /* Media */
 
 @media (min-width: 1280px) {
-    .menu-burger{
-        display: none;
-    }
-
-    .menu-list{
-        position: static;
-        background: transparent;
-        display: flex;
-        column-gap: 24px;
-        margin: 0;
-    }
-
-    .menu-item a{
-        color: #2D2D2D;
-    }
 
     .header-menu{
         padding: 24px 42px;
@@ -436,7 +421,26 @@ button{
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
+    .menu-burger{
+        display: none;
+    }
+
+    .menu-list{
+        position: static;
+        background: transparent;
+        display: flex;
+        column-gap: 24px;
+        margin: 0;
+    }
+
+    .menu-item a{
+        color: #2D2D2D;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1280px) {
+
     .work-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
