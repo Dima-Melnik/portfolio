@@ -280,6 +280,7 @@ button{
 .client-logo{
     height: 50px;
     width: 50px;
+    border-radius: 50%;
 }
 
 /* footer-content */
@@ -319,6 +320,8 @@ button{
     height: 59px;
     width: 100%;
     padding: 16px 24px;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .footer-inputs input::placeholder{
