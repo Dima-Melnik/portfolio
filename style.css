@@ -1,3 +1,6 @@
+@import url(./media.css);
+
+
 *,
 *::before,
 *::after {
@@ -194,7 +197,7 @@ button{
 
 /* main_content-work */
 
-.main_content-work{
+.work-container{
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -215,6 +218,7 @@ button{
     font-weight: 600;
     line-height: 42px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .work-block h2{
@@ -232,7 +236,7 @@ button{
 
 /* main_content-testimonial */
 
-.main_content-testimonial{
+.testimonial-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,6 +254,7 @@ button{
     font-weight: 600;
     line-height: 42px;
     margin-bottom: 42px;
+    text-align: center;
 }
 
 .testimonial-text{
@@ -337,4 +342,96 @@ button{
     line-height: 30px;
     padding: 24px 64px;
     background: #2D2D2D;
+}
+
+/* Media */
+
+@media (min-width: 1280px) {
+    .menu-burger{
+        display: none;
+    }
+
+    .menu-list{
+        position: static;
+        background: transparent;
+        display: flex;
+        column-gap: 24px;
+        margin: 0;
+    }
+
+    .menu-item a{
+        color: #2D2D2D;
+    }
+
+    .header-menu{
+        padding: 24px 42px;
+    }
+
+    .main_content-icon{
+        justify-content: space-between;
+    }
+
+    .heading-box{
+        padding: 42px 32px;
+        column-gap: 234px;
+    }
+ 
+
+    .heading-img img {
+        margin-top: 0;
+    }
+
+    .menu-item{
+        padding: 0;
+    }
+
+    .work-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        padding: 42px 0;
+        margin: 0;
+    }
+
+    .work-title{
+        margin: 0;
+    }
+
+    .main_content-skills{
+        display: flex;
+        justify-content: space-between;
+        padding: 42px 0;
+    }
+
+    .skills-block{
+        padding: 62px 42px;
+    }
+
+    .testimonial-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px 24px;
+    }
+
+    .testimonial-title{
+        padding: 42px 0;
+        margin: 0;
+    }
+
+    .footer-container{
+        display: flex;
+        column-gap: 142px;
+    }
+
+    .footer-text{
+        max-width: 570px;
+    }
+
+    .footer-inputs input:nth-child(2){
+        display: inline;
+    }
+
+    .footer-content{
+        padding: 42px 0 86px 0;
+    }
 }
