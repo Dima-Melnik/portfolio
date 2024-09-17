@@ -96,6 +96,22 @@ button{
     color: #fff;
     font-size: 17px;
     font-weight: 400;
+    position: relative;
+}
+
+.menu-item a::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #2D2D2D;
+    transition: all .5s ease;
+}
+
+.menu-item a:hover::before{
+    width: 100%;
 }
 
 .active{
@@ -112,6 +128,7 @@ button{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .branding-title{
@@ -130,26 +147,27 @@ button{
     font-weight: 400;
     line-height: 27px;
     margin-top: 24px;
-    margin-bottom: 77px;
+    margin-bottom: 48px;
 }
 
 .heading-link{
     font-size: 20px;
     font-weight: 600;
     color: #fff;
-    height: 30px;
     padding: 29px 64px;
     background-color: #2D2D2D;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.heading-link:hover{
+    background-color: #1d1d1d;
 }
 
 .heading-img{
     display: flex;
     justify-content: center;
     position: relative;
-}
-
-.heading-img img{
-    margin-top: 59px;
 }
 
 /* main_content */
@@ -195,6 +213,71 @@ button{
     margin: 0 auto;
 }
 
+.skills-block:nth-child(1) .skills-img{
+    animation: pinks 2s infinite;
+}
+
+@keyframes pinks{
+    0%{
+        transform: scale(1);
+        opacity: 0.9;
+    }
+
+    50%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+.skills-block:nth-child(2) .skills-img{
+    animation: reds 8s infinite;
+}
+
+@keyframes reds{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(45deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.skills-block:nth-child(3) .skills-img{
+    animation: greens 4s infinite;
+}
+
+@keyframes greens{
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(-10px);
+    }
+
+    50%{
+        transform: translateX(10px);
+    }
+
+    75%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
 /* main_content-work */
 
 .work-container{
@@ -237,9 +320,7 @@ button{
 /* main_content-testimonial */
 
 .testimonial-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
     row-gap: 24px;
     margin-bottom: 20px;
 }
@@ -342,6 +423,11 @@ button{
     line-height: 30px;
     padding: 24px 64px;
     background: #2D2D2D;
+    transition: all .3s ease;
+}
+
+.footer-inputs button:hover{
+    background-color: #1d1d1d;
 }
 
 /* Media */
@@ -380,6 +466,7 @@ button{
 
     .heading-img img {
         margin-top: 0;
+        height: 430px;
     }
 
     .menu-item{
@@ -399,8 +486,8 @@ button{
     }
 
     .main_content-skills{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 42px 0;
     }
 
@@ -459,7 +546,6 @@ button{
     }
     
     .heading-box{
-        display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 42px 34px;
@@ -545,15 +631,10 @@ button{
 
     .heading-img img{
         margin-right: 100px;
-        margin-top: 0;
     }
 
     .heading-img{
         justify-content: end;
-    }
-
-    .heading-box{
-        display: block;
     }
 
     .header-menu{
